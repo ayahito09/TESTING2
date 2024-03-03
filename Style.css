@@ -1,0 +1,52 @@
+.body {
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 97vh;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Menyesuaikan tinggi video container dengan tinggi layar */
+    position: relative;
+}
+
+.video1,
+.video2 {
+    width: 30%; /* Mengatur lebar video agar masing-masing video menempati setengah dari lebar kontainer */
+    max-width: 50%; /* Maksimum lebar video */
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgb(255, 97, 35); /* Menambahkan outline stroke warna hitam */
+    position: relative;
+}
+
+.video1,
+.video2 {
+    margin-right: 10px; /* Memberikan jarak 10px antara video1 dan video2 */
+}
+
+.video1 {
+    margin-left: 20px;
+    margin-top: 3%;
+}
+
+
+.image {
+    height: auto;
+    max-width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Menempatkan gambar di belakang video */
+}
